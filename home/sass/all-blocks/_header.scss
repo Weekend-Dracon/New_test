@@ -1,0 +1,44 @@
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #FFFFFF;
+    height: 80px;
+    &__container{
+        display: flex;
+        align-items: center;
+    }
+    &-burger-menu-place{
+        display: none;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item{
+        + .header__item{
+            margin-left: 52px;
+        }
+    }
+    &__link{
+        color: rgba(51, 49, 54, 1);
+    }
+}
+
+.navbar{
+    &__menu{
+        margin-left: 300px;
+    }
+}
+
+@media only screen and (max-width:1990px) {
+    .header{
+        &__list{
+            margin-right: 160px;
+        }
+        
+    }
+}
